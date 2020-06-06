@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: app-2048
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: app
+      name: app-2048
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -15,8 +15,12 @@ spec:
   template:
     metadata:
       labels:
-        name: app
+        name: app-2048
     spec:
       containers:
-      - name: app
-        image: nginx:1.17.5
+      - name: app-2048
+        image: alexwhen/docker-2048
+        ports:
+        - containerPort: 80
+        #image: ianisharpratama/react-i2p:v1
+        imagePullPolicy: Always
