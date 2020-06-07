@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Pulsa anda habis, beli disini aja.
+          File <code>src/App.js</code> Sudah di edit oleh INFRA.
         </p>
         <a
           className="App-link"
-          href="https://sepulsa.com"
+          href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Belanja Pulsa
+          Learn React
         </a>
       </header>
     </div>
