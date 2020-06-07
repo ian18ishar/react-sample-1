@@ -3,7 +3,7 @@
 sudo docker build -f "Dockerfile" -t ian18ishar/fe:$TRAVIS_BUILD_NUMBER .
 sudo docker push ian18ishar/fe:$TRAVIS_BUILD_NUMBER
 
-echo $(GCLOUD_SERVICE_KEY_PRD) | base64 --decode -i > ${HOME}/gcloud-service-key.json
+echo $GCLOUD_SERVICE_KEY_PRD | base64 --decode > ${HOME}/gcloud-service-key.json
 gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
 
 gcloud container clusters get-credentials $(CLUSTER_NAME_PRD) --zone ${CLOUDSDK_COMPUTE_ZONE} --project $(PROJECT_NAME_PRD)
