@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Pulsa anda habis, beli disini aja.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://sepulsa.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React 123
+          Belanja Pulsa
         </a>
       </header>
     </div>
