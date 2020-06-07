@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          File <code>src/App.js</code> Sudah di edit oleh INFRA.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
