@@ -1,8 +1,6 @@
-# fill the env file
-#sed -i -e 's|REAK_STAGING_SONAR_URL|'"${REAK_STAGING_SONAR_URL}"'|g' docker-staging.env
+
 
 sudo docker build -f "Dockerfile" -t ian18ishar/fe:$TRAVIS_BUILD_NUMBER .
-# push apps image to docker hub
 sudo docker push ian18ishar/fe:$TRAVIS_BUILD_NUMBER
 
 #echo $(GCLOUD_SERVICE_KEY_PRD) | base64 --decode -i > ${HOME}/gcloud-service-key.json
