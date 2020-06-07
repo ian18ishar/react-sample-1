@@ -18,6 +18,8 @@ env:
   - TRAVIS_ALLOW_FAILURE=false
 install:
 - npm install
+- npm run build
+- npm run test
 
 before_script:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
