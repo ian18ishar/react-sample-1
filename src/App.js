@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Pulsa anda habis ? Beli disini AJA!
+          Pulsa anda habis ? Beli disini AJA, PALING MURAH SE-Indonesia Raya
         </p>
         <a
           className="App-link"
